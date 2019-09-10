@@ -16,7 +16,9 @@
   "scripts": {
     "watch": "cross-env NODE_ENV=development parcel index.html --no-hmr --open ",
     "build": "cross-env NODE_ENV=production parcel build index.html --public-url ./",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start": "cross-env NODE_ENV=production parcel build index.html --public-url ./"
+
   },
   "browser": {
     "crypto": false
