@@ -1,0 +1,27 @@
+{
+  "name": "@tensorflow-models/body-pix",
+  "version": "1.1.2-54335ac6",
+  "description": "Pretrained BodyPix model in TensorFlow.js",
+  "main": "dist/index.js",
+  "jsnext:main": "dist/body-pix.esm.js",
+  "module": "dist/body-pix.esm.js",
+  "unpkg": "dist/body-pix.min.js",
+  "jsdelivr": "dist/body-pix.min.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tensorflow/tfjs-models.git"
+  },
+  "peerDependencies": {
+    "@tensorflow/tfjs-core": "~1.2.1",
+    "@tensorflow/tfjs-converter": "~1.2.1"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "publish-local": "yarn build && rollup -c && yalc publish",
+    "test": "ts-node run_tests.ts",
+    "publish-npm": "yarn build && rollup -c && npm publish",
+    "lint": "tslint -p . -t verbose"
+  },
+  "license": "Apache-2.0"
+}

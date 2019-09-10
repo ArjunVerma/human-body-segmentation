@@ -1,0 +1,8 @@
+{
+  "version": "v1",
+  "packages": {
+    "@tensorflow-models/body-pix": {
+      "signature": "54335ac647cc928cf67a9d4c6de4f32f"
+    }
+  }
+}
